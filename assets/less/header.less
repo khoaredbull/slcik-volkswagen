@@ -1,0 +1,270 @@
+@bg-color-1: #26262A;
+@bg-color-2: #F9DE5A;
+@bg-color-3: white;
+
+@font-weight-1: 300;
+@font-weight-2: 400;
+@font-weight-3: 700;
+@font-weight-4: 800;
+
+@font-size-1: 11px;
+@font-size-2: 12px;
+@font-size-3: 13px;
+@font-size-4: 14px;
+@font-size-5: 18px;
+@font-size-6: 16px;
+
+@font-color-1: #303033;
+@font-color-2: #ffffff;
+@font-color-3: #8E9298;
+@font-color-4: #F9DE5A;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    img{
+        max-width: 100%;
+    }
+}
+@font-face {
+    font-family: snes-italic;
+    src: url(../css/font/SNES\ Italic.ttf);
+}
+header{
+    max-width: 1440px;
+    margin: auto;
+    background-color: @bg-color-3;
+    .container{
+        .header-warapper{            
+            .header-top{
+                display: flex;
+                .top-black{
+                    width: 28.82%;
+                    padding-bottom: 10px;
+                    background-color: @bg-color-1;
+                }
+                .top-yellow{
+                    width: 77.18%;
+                    background-color: @bg-color-2;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+            .header-center{
+                padding: 0px 100px;
+                display: flex;
+                align-items: baseline;
+                padding-top: 35px;
+                .logo-company{  
+                    width: 20%;                                      
+                    img{                       
+                        padding-right: 15px;                           
+                    }                               
+                    .logo{ 
+                        text-decoration: none; 
+                        span{
+                            font-size: 30px;
+                            color: @font-color-1;
+                            font-family: snes-italic;                                                                    
+                        }                                                              
+                    }
+                    
+                }
+                .account{
+                    width: 80%;
+                    text-align: right;
+                    & a:last-child{
+                        padding-right: 0px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: @font-color-1;
+                        font-size: @font-size-2;
+                        font-weight: @font-weight-1;
+                        padding: 0px 20px;
+                    }
+                    .single{
+                        
+                        img{
+                            padding-right: 20px;
+                        }
+                    }
+                    .cart{
+                        
+                        img{
+                            padding-right: 10px;
+                        }
+                    }
+                    .sidebar{
+                        display: none;
+                    }
+                }
+            }
+            .header-bottom{
+                padding: 0px 100px;;
+                display: flex;
+                align-items: center;
+                padding-top: 95px;
+                padding-bottom: 55px;
+                .car-name{
+                    width: 30%;
+                    h1{
+                    color: @font-color-1;
+                    font-weight: @font-weight-3;
+                    font-size: 36px;
+                    }
+                }
+                
+            }
+    }
+}
+.menu{
+    width: 70%;
+    text-align: right;
+    ul{
+        & li:first-child{
+            padding-left: 0px;
+        }
+        & li:last-child{
+            padding-right: 0px;
+        }
+        li{
+            display: inline-block;
+            list-style-type: none;
+            padding: 0px 20px;                           
+            a{
+                text-decoration: none;
+                font-weight: @font-weight-4;
+                font-size: @font-size-2;
+                color: @font-color-3; 
+                position: relative;
+                &::before{
+                    content: "";
+                    width: 5px;
+                    height: 9px;
+                    background-color: @bg-color-2;
+                    position: absolute;
+                    top: 4px;
+                    left: -15px;
+                    display: none;
+                }
+                &:hover{
+                    color: @font-color-1;  
+                    &::before{
+                        display: block;
+                    }                           
+                }                              
+          
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+    header{
+        .container{
+            .header-warapper{
+                .header-center{
+                    padding: 0px 40px;
+                    padding-top: 25px;
+                    .logo-company{
+                        img{
+                            padding-right: 10px;
+                        }
+                        .logo{
+                            span{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+        
+                }
+                .header-bottom{
+                    padding: 0px 40px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    .car-name{
+                        h1{
+                            font-size: 27px;
+                        }
+                    }
+                    .menu{
+                        ul{
+                            li{
+                                padding: 0px 15px;
+                                a{
+                                    font-size: 10px;
+                                    &::before{
+                                        width: 4px;
+                                        height: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    header{
+        .container{
+            .header-warapper{
+                .header-center{
+                    padding: 0px 20px;
+                    padding-top: 20px;
+                    .logo-company{
+                        width: 30%;
+                        padding-left: 45px;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            padding-right: 0px;
+                            left: 0px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        .logo{
+                            span{
+                                font-size: 30px;                               
+                            }
+                        }
+                    }
+                    .account{
+                        width: 70%;
+                        .single, .block{
+                            display: none;
+                        }
+                        .cart{
+                            padding-right: 25px;
+                        }
+                        .sidebar{
+                            display: inline-block;
+                            
+                            padding-left: 0px;
+                        }
+                    }
+        
+                }
+                .header-bottom{
+                    padding: 0px;
+                    padding-top: 40px;
+                    padding-bottom: 25px;
+                    
+                    .car-name{
+                        width: 100%;
+                        text-align: center;
+                        h1{
+                            font-size: 36px;
+                        }
+                    }
+                    .menu{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

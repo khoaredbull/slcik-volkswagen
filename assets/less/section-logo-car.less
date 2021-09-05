@@ -1,0 +1,84 @@
+.logo-car-warapper{
+        display: flex;
+        align-items: center;
+        padding: 100px 100px;
+    .partners{
+        font-size: @font-size-5;
+        font-weight: @font-weight-1;
+        color: @font-color-1;
+        position: relative;
+        display: inline-block;
+        
+        &::after{
+            content: "";
+            width: 1px;
+            height: 20px;
+            background-color: @font-color-1;;
+            position: absolute;
+            top: 0px;
+            right: -30px;
+        }
+    }
+    .logo-partners{
+        display: flex;
+        align-items: center;
+        & .logo-car:first-child{
+            padding-left: 105px;
+        }
+        .logo-car{
+            padding: 0px 45px;
+        }
+        
+    }
+}
+@media screen and (max-width:1200px){
+    .logo-car-warapper .partners  {
+    white-space: nowrap;
+}
+}
+@media screen and (max-width: 1023px){
+    .logo-car-warapper{
+        padding: 50px 40px;
+        .partners{
+            font-size: @font-size-6;
+            &::after{
+                height: 15px;          
+                top: 4px;
+                right: -20px;
+            }
+        }
+        .logo-partners{       
+            .logo-car{
+                padding: 0px 20px;
+            }
+            .logo-car:first-child {
+                padding-left: 55px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .logo-car-warapper{
+        padding: 0px;
+        padding-top: 75px;
+        display: block;
+        text-align: center;
+        .partners{
+            padding-bottom: 57px;
+            font-size: @font-size-5;
+            &::after{
+                display: none;
+            }
+        }
+        .logo-partners{ 
+            display: block;      
+            .logo-car{
+                padding: 37px 0px;
+                max-width: 100%;
+            }
+            .logo-car:first-child {
+                padding-left: 0px;
+            }
+        }
+    }
+}

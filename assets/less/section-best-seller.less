@@ -1,0 +1,553 @@
+.best-seller-warapper{
+    padding: 45px 100px; 
+    .grid-thumd{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 40px;
+        padding-bottom: 15px;
+        a{
+            padding: 0px 12px;
+        }
+    }
+    
+    .background-car-warapper{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        box-shadow: 20px 20px #f0f0f0;
+        
+        & .background-car:nth-child(2) .background-item{
+            background-image: url(../images/img1.jpg);
+        }
+        & .background-car:nth-child(3) .background-item{
+            background-image: url(../images/img2.jpg);
+        }
+        .background-car{
+            width: 100%;
+            padding-top: 68.75%;
+            position: relative;
+            box-shadow: 20px 0px #f0f0f0;
+            .background-item{               
+                background-image: url(../images/img.jpg);     
+                object-fit: cover;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px; 
+                .top{
+                    display: flex;
+                    align-items: center;
+                    .hot{
+                        width: 15%;
+                        img{
+                        padding: 12px 13.5px;
+                        background-color: #EE755A;
+                        }
+                    }
+                    .price{
+                        width: 76.25%;
+                        span{
+                        font-size: @font-size-2;
+                        color: @font-color-2;
+                        font-weight: @font-weight-4;
+                        }
+                    }
+                    .eye{
+                        width: 8.75%;
+                        img{
+                            padding-top: 10px;
+                        }
+                    }
+                } 
+                .top-sale{
+                   .new{
+                       padding: 11.5px 7px;
+                       background-color: #4681EC;
+                       font-size: @font-size-2;
+                       color: @font-color-2;
+                       font-weight: @font-weight-1;
+                   } 
+                }
+                .top-sale{
+                    .sale{
+                        padding: 11.5px 6.4px;
+                        background-color: #75DE84;
+                        font-size: @font-size-2;
+                        color: @font-color-2;
+                        font-weight: @font-weight-1;
+                    }
+                }
+                .square{
+                    padding-top: 65px;
+                    text-align: center;
+                    display: none;
+                    .tick{
+                        margin: 0px 4px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: @bg-color-3;
+                        display: inline-block;       
+                        border: none;     
+                        &:hover{
+                            background-color: @bg-color-2;
+                        }
+                    }
+                }
+                .bottom{                
+                                          
+                        a{
+                            text-decoration: none;
+                            .add-to-car{
+                                position: absolute;
+                                left: 0px;
+                                bottom: 0px; 
+                                padding: 15.5px 19px;
+                                background-color: @bg-color-2;
+                                font-weight: @font-weight-4; 
+                                font-size: @font-size-2;
+                                color: @bg-color-1;
+                                text-decoration: none;
+                                display: inline;
+                                img{
+                                   padding-left: 30px;
+                                }
+                            }                          
+                        }
+                    
+
+                }
+                .icon-tick{
+                    display: flex; 
+                    position: absolute;
+                    right: 0px;
+                    bottom: -5px; 
+                    & a:nth-child(3) .icon{
+                        background-color: @bg-color-1;
+                    }                 
+                    & a:nth-child(4) .icon{
+                        background-color: @bg-color-1;
+                    }                 
+                    a{
+                        padding-left: 1px;
+                        .icon{
+                            width: 50px;
+                            height: 50px;
+                            position: relative;
+                            background-color: @bg-color-2;
+                            display: inline-block;
+                            
+                            img{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }      
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.background-text{
+    width: 65%;
+    .background-title{
+        font-size: @font-size-2;
+        font-weight: @font-weight-4;
+        color: @font-color-2;
+        line-height: 3;
+    }
+    .text{
+        font-size: @font-size-2;
+        font-weight: @font-weight-1;
+        color: @font-color-2;
+        line-height: 3;
+    }
+}
+.title-primary{
+    font-size: @font-size-5;
+    color: @font-color-1;
+    font-weight: @font-weight-4;
+    text-align: center;
+    line-height: 2.5;
+}
+.title-secondary{
+    font-size: @font-size-4;
+    color: @font-color-1;
+    font-weight: @font-weight-2;
+    text-align: center;
+    line-height: 2;
+    padding-bottom: 15px;
+}
+.background-warapper{
+    display: flex;
+    box-shadow: 20px 20px #f0f0f0;        
+    .background-small{
+        background-color: @bg-color-1;
+        width: 32.26%;         
+        display: flex;
+        align-items: center;
+        padding: 62px 0px;
+        .background-icon{
+            width: 35%;
+            text-align: center;
+        }             
+    }.background-big{
+        background-color: @bg-color-2;
+        width: 67.74%;
+        display: flex;           
+        align-items: center;
+        .background-icon{
+            width: 37.62%;
+            padding-left: 175px;
+        }
+        .background-text{
+            width: 39.76%;
+            position: relative;
+            &::after{
+                content: "";
+                width: 1px;
+                height: 222%;
+                background-color: @bg-color-3;
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .background-title{
+                color: @font-color-1;                                      
+            }
+            .text{
+                color: @font-color-1;
+            }
+        }
+        a{
+            width: 22.62%;
+            text-align: center;
+            
+        }
+    }
+}
+
+@media screen and (max-width:1350px){
+    
+    .best-seller-warapper{
+
+        .background-car-warapper{    
+            .background-car{
+                .background-item{          
+                    .bottom{               
+                        a{                   
+                            .add-to-car{
+                                padding: 13px 5px;
+                            }
+                        } 
+                    } 
+                    .icon-tick{
+                        a{
+                            .icon{
+                                width: 45px;
+                                height: 45px;
+                            }
+                        }
+                    }
+                } 
+            } 
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+.best-seller-warapper {
+    .background-warapper{
+        .background-small{
+            .background-icon{
+                width: 25%;
+            }
+            .background-text{
+                .background-title{
+                    line-height: 2;
+                }
+                .text{
+                    line-height: 2;
+                }
+            }
+        }
+        .background-big{
+            .background-icon{
+                padding-left: 100px;
+            }
+        }
+    }
+    .background-car-warapper{    
+        .background-car{
+            .background-item{          
+                .bottom{               
+                    a{                   
+                        .add-to-car{
+                            padding: 6px 5px;
+                        }
+                    } 
+                } 
+                .icon-tick{
+                    a{
+                        .icon{
+                            width: 31px;
+                            height: 31px;
+                        }
+                    }
+                }
+            } 
+        } 
+    }
+
+} 
+}
+
+@media screen and (max-width: 1023px){
+    .best-seller-warapper{
+        padding: 25px 40px;    
+        .title-car-primary{
+            font-size: @font-size-6;       
+        }
+        .title-secondary{
+            font-size: @font-size-2;
+        }
+        .grid-thumd{
+            padding-right: 30px;
+            padding-bottom: 8px;
+            a{
+                padding: 0px 8px;
+            }
+        }
+        .background-warapper{
+            .background-small{
+                padding: 30px 0px;
+                .background-text{
+                    .background-title{
+                        font-size: 10px;
+                    }
+                    .text{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .background-big{
+                .background-icon{
+                    padding-left: 50px;
+                }
+                .background-text{
+                    .background-title{
+                        font-size: 10px;
+                        line-height: 2;
+                    }
+                    .text{
+                        font-size: 10px;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+        .background-car-warapper{
+            .background-car{
+                .background-item{
+                    .top{
+                        .hot{
+                            
+                            img{
+                                max-width: 147%;                               
+                                padding: 8px 9.5px;
+
+                            }
+                        }
+                        .price{
+                            
+                            span{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .top-sale{
+                        .new, .sale{
+                            padding: 9px 5px;
+                            font-size: 10px;
+                        }
+                        
+                    }
+                    .bottom{
+                        a{
+                            .add-to-car{
+                                padding: 3px 2px;
+                                img{
+                                    padding-left: 5px;
+                                }
+                            }
+                        }
+                        .icon-tick{
+                            a{
+                                .icon{
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 767px){
+    .best-seller-warapper{
+        padding: 25px 0px;    
+        .title-car-primary{
+            font-size: @font-size-5;       
+        }
+        .title-secondary{
+            font-size: @font-size-4;
+            padding-bottom: 30px;
+        }
+        .grid-thumd{
+            display: none;
+        }
+        .background-warapper{
+            box-shadow: 0px 0px;
+            display: block;
+            .background-small{
+                padding: 55px 0px;
+                padding-bottom: 45px;
+                width: 100%;
+                display: block;
+                .background-text{
+                    width: 100%;
+                    text-align: center;
+                    .background-title{
+                        font-size: @font-size-2;
+                        line-height: 3;
+                    }
+                    .text{
+                        font-size: @font-size-2;
+                        line-height: 3;
+                    }
+                }
+                .background-icon{
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+            }
+            .background-big{
+                width: 100%;
+                display: block;
+                padding-top: 55px;
+                .background-icon{
+                    padding-left: 0px;
+                    text-align: center;
+                    width: 100%;
+                }
+                .background-text{
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 20px;
+                    padding-bottom: 45px;
+                    &::after{
+                            width: 100%;
+                            height: 1px;
+                            top: 100%;
+                        }
+                        .background-title{
+                            font-size: @font-size-2;
+                            line-height: 3;
+                        }
+                        .text{
+                            font-size: @font-size-2;
+                            line-height: 3;                       
+                        }
+                    }
+                    a{
+                    display: inline-block;
+                    width: 100%;
+                    padding: 35px 0px;
+                    }
+            }
+        }
+        .background-car-warapper{
+            display: block;
+            box-shadow: 0px 0px;
+            & .background-car:nth-child(2), .background-car:last-child{
+                display: none;
+            }
+            .background-car{
+                padding-top: 86%;              
+                .background-item{
+                    background-image: url(../images/img-1.jpg);
+                    .top{
+                        padding: 0px 20px;
+                        padding-top: 10px;
+                        
+                        .hot   
+                            img{
+                                max-width: 147%;                               
+                                padding: 8px 9.5px;
+
+                            }
+                    
+                        .price{
+                            span{
+                                font-size: @font-size-2;
+                            }                          
+                        }
+                        .eye{
+                            display: none;
+                        }
+                    } 
+                    .square{
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 25px;
+                    }                                       
+                    .bottom{
+                        a{
+                            .add-to-car{
+                                padding: 3px 2px;
+                                font-size: @font-size-2;
+                                padding: 15.5px 19px;
+                                bottom: -30px;
+                                left: 20px;
+                                img{
+                                    padding-left: 30px;
+                                }
+                            }
+                        }
+                        .icon-tick{
+                            padding-right: 20px;
+                            & a:nth-child(3), a:last-child{
+                                display: none;
+                            }
+                            a{
+                                .icon{
+                                    width: 50px;
+                                    height: 50px;
+                                    bottom: -30px;
+                                }
+                            }
+                        }
+                    }
+                }    
+            }        
+        }
+    }
+}
+    
+
+

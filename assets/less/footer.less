@@ -1,0 +1,262 @@
+.footer-warapper{
+    margin: auto;
+    max-width: 1440px; 
+    position: relative;
+    background-image: url(../images/misc---cube-polygon12.jpg);      
+        .footer-top-warapper{
+            background-color: #2C2C31;
+            padding: 17px 0px;
+            .footer-top{
+                padding: 0px 100px;
+                display: flex;
+                align-items: center;
+                
+                .info-company{
+                    width: 79%;
+                    font-size: @font-size-1;
+                    font-weight: @font-weight-1;
+                    color: @font-color-4;
+                    & span:first-child{
+                        padding-left: 0px;
+                    }
+                    span{
+                        padding: 0px 10px;
+                    }
+                }
+                .footer-icon-follow{  
+                    width: 18.74%;            
+                    img{
+                        padding: 0px 15px;
+                    }
+                }
+                .footer-icon-polgon{
+                    width: 2.26%;
+                }
+            } 
+        }
+        .footer-center-warapper{
+            .footer-center{
+                padding: 0px 100px;
+                display: flex;
+                .footer-menu{
+                    position: relative;
+                    width: 25%;
+                    .title-footer-menu{
+                        color: @font-color-4;
+                        font-weight: @font-weight-3;
+                        font-size: @font-size-1;
+                        transform: rotate(90deg);
+                        position: absolute;
+                        left: -23px;
+                        top: 120px;
+                        &::before{
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            border: 3px solid @bg-color-2;
+                            position: absolute;
+                            top: 2px;
+                            left: -30px;
+                            box-sizing: border-box;
+                        }
+                        
+                    }
+                    ul{
+                        padding-left: 40px;
+                        padding-top: 57px;
+                            li{
+                                list-style-type: none;
+                                a{
+                                    text-decoration: none;
+                                    color: @font-color-2;
+                                    font-size: @font-size-3;
+                                    font-weight: @font-weight-1;
+                                    line-height: 2.5;
+                                    &:hover{
+                                        border-bottom: 1px solid @font-color-2;
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
+        .footer-bottom-warapp{
+            
+            padding: 0px 100px;
+            padding-top: 60px;
+            .footer-bottom{
+                text-align: right;
+                padding-right: 15px;
+                span{
+                    font-size: 10px;
+                    font-weight: @font-weight-1;
+                    color: @font-color-2;
+                    strong{
+                        color: @bg-color-2
+                    }
+                }
+            }
+        }
+    
+}
+@media screen and (max-width:1200px){
+    .footer-warapper {
+
+        .footer-warapper-backgrount {
+            .footer-top-warapper{
+                .footer-top{
+    
+                    .info-company{
+                        width: 72%;
+                    } 
+                    .footer-icon-follow{
+                        width: 25.74%;
+                    }
+                }
+            }
+            .footer-center-warapper{
+    
+                .footer-center 
+                .footer-menu 
+                ul 
+                li 
+                a{
+                    line-height: 2;
+                }
+            } 
+        }
+    }
+}
+@media screen and (max-width:1023px){
+    .footer-warapper{
+        .footer-warapper-backgrount{
+            .footer-top-warapper{
+                .footer-top{
+                    padding: 0px 40px;
+                    .info-company{
+                        font-size: 9px;
+                        
+                    }
+                    .footer-icon-follow{
+                        img{
+                            padding: 0px 10px;
+                        }
+                    }
+                }
+            }
+            .footer-center-warapper{
+                .footer-center{
+                    padding: 0px 40px;
+                    .footer-menu{
+                        width: 30%;
+                        .title-footer-menu{
+                            top: 65px;
+                            font-size: 9px;
+                            &::before{
+                                width: 8px;
+                                height: 8px;
+                                border: 2px solid @bg-color-2;
+                                left: -20px;
+                            }
+                        }
+                        ul{
+                            padding-left: 20px;
+                            padding-top: 20px;
+                            li{
+                                a{
+                                    font-size: @font-size-1;
+                                    line-height: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .footer-warapper{   
+        background-color: @bg-color-1;    
+        
+            .footer-top-warapper{
+                padding-left: 20px;
+                padding-right: 20px;
+                .footer-top{
+                    padding: 0px;
+                    flex-wrap: wrap;
+                    .info-company{
+                        font-size: @font-size-1;
+                        order: 1; 
+                        text-align: center;  
+                        width: 100%;
+                        padding-top: 42px;
+                        span{
+                            line-height: 3;
+                        }
+                    }
+                    .footer-icon-polgon{
+                        width: 30%;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                    .footer-icon-follow{
+                        width: 70%; 
+                        & img:first-child{
+                            padding-left: 0px;
+                        }                      
+                        img{
+                            padding: 0px 13px;
+                        }
+                    }
+                }
+            }
+            .footer-center-warapper{
+                .footer-center{
+                    padding: 0px 20px;
+                    display: block;
+                    .footer-menu{
+                        width: 100%;                       
+                        .title-footer-menu{
+                            left: -22px;
+                            top: 130px;
+                            font-size: @font-size-1;
+                            &::before{
+                                width: 10px;
+                                height: 10px;
+                                border: 3px solid @bg-color-2;
+                                left: -30px;
+                            }
+                        }
+                        ul{
+                            padding-left: 40px;
+                            padding-top: 68px;
+                            li{
+                                a{
+                                    font-size: @font-size-1;
+                                    line-height: 3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-bottom-warapp{
+                padding: 0px;
+                padding-top: 58px;
+                .footer-bottom{
+                    padding: 40px 0px;
+                    text-align: center;
+                    margin: 0px 20px;
+                    border-top: 1px solid #4C4C54;
+                    text-align: center;
+
+                    span{
+                        
+                    }
+                }
+            }
+        
+    }
+}
