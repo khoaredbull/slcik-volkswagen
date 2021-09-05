@@ -222,7 +222,10 @@ header .container .header-bottom .car-name h1 {
   width: 84.67%;
   margin-bottom: 0px;
 }
-.main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .banner-car {
+.main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .slick-list {
+  height: 400px!important;
+}
+.main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .slick-list .banner-car {
   background-image: url(../images/main-img.jpg);
   object-fit: cover;
   background-size: cover;
@@ -230,21 +233,6 @@ header .container .header-bottom .car-name h1 {
   width: 100%;
   padding-top: 38.1%;
   position: relative;
-}
-.main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .banner-car .square {
-  text-align: center;
-  display: none;
-}
-.main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .banner-car .square .tick {
-  margin: 0px 3px;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  display: inline-block;
-  border: none;
-}
-.main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .banner-car .square .tick:hover {
-  background-color: #F9DE5A;
 }
 .main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .slick-dots {
   bottom: 10px;
@@ -393,7 +381,6 @@ header .container .header-bottom .car-name h1 {
   }
   .main-content .section-banner .container .banner-warapper .banner .banner-car-warapper {
     width: 100%;
-    padding-top: 86%;
   }
   .main-content .section-banner .container .banner-warapper .banner .banner-car-warapper .banner-car {
     background-image: url(../images/main1-img.jpg);

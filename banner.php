@@ -17,14 +17,7 @@
                                         <a class="details" href="#">DETAILS</a>
                                         
                                     </div>
-                                    <div class="square">
-                                        <a class="tick" href="#"></a>
-                                        <a class="tick" href="#"></a>
-                                        <a class="tick" href="#"></a>
-                                        <a class="tick" href="#"></a>
-                                        <a class="tick" href="#"></a>
-                                        
-                                    </div>
+                              
                                 </div>
                             </div>
                             <?php endfor; ?>   
@@ -34,7 +27,7 @@
                                     Discover
                                 </div>
                             
-                                <span class="number">2/5</span>
+                                <span class="number"></span>
                             </div>
                         </div>
                 </div>
